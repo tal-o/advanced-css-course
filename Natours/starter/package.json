@@ -1,0 +1,13 @@
+{
+    "name": "starter",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    },
+    "devDependencies": {
+        "node-sass": "^4.11.0"
+    },
+    "dependencies": {}
+}
