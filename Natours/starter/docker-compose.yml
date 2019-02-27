@@ -4,10 +4,8 @@ services:
         build:
             context: .
         tty: true
+        restart: always
         volumes:
             - ./package.json:/work/package.json
             - ./yarn.lock:/work/yarn.lock
-            - ./css:/work/css
-            - ./img:/work/img
-            - ./sass:/work/sass
-            - ./index.html:/work/index.html
+            - ./src:/work/src
