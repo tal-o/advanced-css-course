@@ -2,10 +2,10 @@ FROM node:lts
 
 WORKDIR /work
 
-COPY package.json package.json
+COPY package.json yarn.lock ./
 
 RUN yarn
 
 COPY . .
 
-ENTRYPOINT ["bash"]
+CMD [ "yarn", "compile:sass" ]

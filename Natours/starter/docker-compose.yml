@@ -6,8 +6,8 @@ services:
         tty: true
         volumes:
             - ./package.json:/work/package.json
-            - ./index.html:/work/index.html
+            - ./yarn.lock:/work/yarn.lock
             - ./css:/work/css
             - ./img:/work/img
             - ./sass:/work/sass
-            - ./yarn.lock:/work/yarn.lock
+            - ./index.html:/work/index.html
