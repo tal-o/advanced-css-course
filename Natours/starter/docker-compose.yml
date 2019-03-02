@@ -1,11 +1,11 @@
 version: "3"
 services:
-    dev:
-        build:
-            context: .
-        tty: true
-        restart: always
-        volumes:
-            - ./package.json:/work/package.json
-            - ./yarn.lock:/work/yarn.lock
-            - ./src:/work/src
+  dev:
+    build:
+      context: .
+    tty: true
+    restart: always
+    volumes:
+      - ./package.json:/work/package.json
+      - ./yarn.lock:/work/yarn.lock
+      - ./src:/work/src
