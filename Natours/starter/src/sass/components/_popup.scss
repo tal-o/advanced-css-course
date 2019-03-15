@@ -26,12 +26,20 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(0.5);
         transition: all 0.3s;
+
+        @include respond(tab-port) {
+            width: 85%;
+        }
     }
 
     &__left {
         width: 33.33333%;
         display: table-cell;
         vertical-align: middle;
+
+        @include respond(tab-land) {
+            vertical-align: top;
+        }
     }
 
     &__right {
