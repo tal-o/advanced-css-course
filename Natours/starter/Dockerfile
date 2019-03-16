@@ -8,4 +8,4 @@ RUN yarn
 
 COPY . .
 
-CMD [ "yarn", "compile:sass" ]
+CMD [ "yarn", "watch:sass" ]
