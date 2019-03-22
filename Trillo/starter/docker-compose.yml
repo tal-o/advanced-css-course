@@ -9,3 +9,7 @@ services:
       - ./package.json:/work/package.json
       - ./yarn.lock:/work/yarn.lock
       - ./src:/work/src
+      - node_modules/:/work/node_modules
+
+volumes:
+  node_modules:
